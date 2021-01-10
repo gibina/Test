@@ -16,7 +16,7 @@ class Data_gather(object):
 		step.append(val1)
 		print("\n Step = ",step)
 
-	def Two_factor anova():
+	def Two_factor_anova():
 		df = pd.Dataframe({'window':windo,'step':step,"Ano_score":Ano_score})
 		win_m =df.window.mean()
 		step_m = df.step.mean()
