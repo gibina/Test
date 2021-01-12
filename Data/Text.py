@@ -56,7 +56,7 @@ class Data_gather():
 	def window(val):
 		if val not in windo:
 			windo.append(val)
-			print("\n Win = ",windo)
+			#print("\n Win = ",windo)
 			win = windo
 			 
 			f= open("Window_Size.txt","a+")
@@ -69,7 +69,7 @@ class Data_gather():
 	def Step_Size(val1):
 		if val1 not in step:
 			step.append(val1)
-			print("\n Step = ",step)
+			#print("\n Step = ",step)
 			st = step
 			f1= open("Step_Size.txt","a+")
 			f1.write("%d \n" %val1)
