@@ -39,7 +39,7 @@ class JibinaDetector(AnomalyDetector):
     over a sliding window of inputData values. The tail probability is based on the
     Q-function. The windowSize has been tuned to give best performance on NAB.
     """
-
+    tempt = 0
     anomalyScore = 0.0
     inputValue = inputData["value"]
     if len(self.windowData) > 0:
@@ -57,8 +57,10 @@ class JibinaDetector(AnomalyDetector):
         # reset stepBuffer
         self.stepBuffer = []
         self._updateWindow()
-    Data_gather.window(windowSize)
-    Data_gather.Step_Size(stepSize)
+    
+    Data_gather.window(self.windowSize)
+    Data_gather.Step_Size(self.stepSize)
+    tempt = 1
     return (anomalyScore, )
 
 
