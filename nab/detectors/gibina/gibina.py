@@ -25,7 +25,7 @@ class JibinaDetector(AnomalyDetector):
   def __init__(self, *args, **kwargs):
     super(JibinaDetector, self).__init__(*args, **kwargs)
 
-    self.windowSize = random.randint(5000,6000)
+    self.windowSize = random.randint(5500,7000)
     self.windowData = []
     self.stepBuffer = []
     self.stepSize = random.randint(200,500)
