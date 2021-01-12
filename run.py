@@ -198,7 +198,7 @@ if __name__ == "__main__":
   if "earthgeckoSkyline" in args.detectors:
     from nab.detectors.earthgecko_skyline.earthgecko_skyline_detector import EarthgeckoSkylineDetector
 
-  if "gibina" in args.detectors:
+  if "jibina" in args.detectors:
     from nab.detectors.gibina.gibina import JibinaDetector
   if "gaussian" in args.detectors:
     from nab.detectors.gaussian.windowedGaussian_detector import WindowedGaussianDetector
