@@ -277,7 +277,7 @@ class Runner(object):
         finalResults[detector][profile] = score
       if tes == 0:
         print("\n \nI'm in test = ",score)
-        Data_gather(score)
+        Anomaly(score)
         tes = 1
       print(("Final score for \'%s\' detector on \'%s\' profile = %.2f"
              % (detector, profile, score)))
