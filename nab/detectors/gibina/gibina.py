@@ -28,7 +28,7 @@ class JibinaDetector(AnomalyDetector):
     self.windowSize = random.randint(5500,7000)
     self.windowData = []
     self.stepBuffer = []
-    self.stepSize = random.randint(200,500)
+    self.stepSize = random.randint(5500,7000)
     self.mean = 0
     self.std = 1
 
